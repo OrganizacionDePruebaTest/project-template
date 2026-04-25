@@ -1,0 +1,15 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  operations-call:
+    uses: OrganizacionDePruebaTest/asociacion-ops/.github/workflows/netlify-reusable.yml@main
+    with:
+      site_id: "ID-DE-NETLIFY-DE-ESTE-PROYECTO"
+    secrets:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
