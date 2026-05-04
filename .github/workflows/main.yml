@@ -7,9 +7,9 @@ on:
     branches: [main]
 
 jobs:
-  operations-call:
-    uses: OrganizacionDePruebaTest/asociacion-ops/.github/workflows/netlify-reusable.yml@main
+  call-central-workflow:
+    uses: tu-org/api-operations/.github/workflows/reusable-workflow.yml@main
     with:
-      site_id: "ID-DE-NETLIFY-DE-ESTE-PROYECTO"
-    secrets:
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      # Define tu lenguaje principal
+      language: 'node' 
+    secrets: inherit 
