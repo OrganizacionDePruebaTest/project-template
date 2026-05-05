@@ -11,7 +11,7 @@ Para comenzar un nuevo proyecto siguiendo nuestros estándares, sigue estos paso
 1.  **Solicitud:** Solicita un nuevo repositorio basado en este *template* a través de una conversación en el canal oficial o contactando directamente con tu **Coordinador de Proyecto**.
 2.  **Asignación:** Una vez se te asigne el repositorio, clónalo en tu máquina local:
     `git clone https://github.com/tu-asociacion/nombre-de-tu-repo.git`
-3.  **Instalación:** Instala las dependencias necesarias (necesitarás Node.js v20 o superior):
+3.  **Instalación:** Instala las dependencias necesarias (necesitarás Node.js v24 o superior):
     `npm install`
 4.  **Desarrollo:** Crea una nueva rama para tus cambios (`git checkout -b feature/nueva-funcionalidad`) y empieza a programar. Al hacer *push* a `main`, el sistema desplegará automáticamente.
 
