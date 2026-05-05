@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: 🚀 CI/CD Pipeline
 
 on:
   push:
@@ -7,9 +7,10 @@ on:
     branches: [main]
 
 jobs:
-  call-central-workflow:
-    uses: tu-org/api-operations/.github/workflows/reusable-workflow.yml@main
+  call-ops-workflow:
+    # Sustituye 'tu-usuario' por el nombre de tu cuenta o asociación en GitHub
+    uses: OrganizacionDePruebaTest/asociacion-ops/.github/workflows/netlify_reusable.yml@main
     with:
-      # Define tu lenguaje principal
-      language: 'node' 
-    secrets: inherit 
+      language: 'node'
+      node_version: '20'
+    secrets: inherit # Pasa los tokens de Netlify automáticamente
