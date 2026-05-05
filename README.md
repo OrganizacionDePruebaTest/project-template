@@ -49,7 +49,7 @@ src/
 │   ├── format.js
 │   └── format.test.js     <-- Vitest lo encuentra aquí
 ```
-*Si una funcionalidad no tiene su correspondiente archivo `.test.js`, se considerará incompleta.*
+*Si una funcionalidad no tiene su correspondiente archivo `.test.js`, se considerará incompleta, sin embargo el pipeline seguira adelante*
 
 ---
 
